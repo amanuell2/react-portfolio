@@ -1,10 +1,12 @@
 import React from 'react'
 import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
 function App() {
   return (
-    <div className="App">
+    <>
       <AboutUs />
-    </div>
+      <Services></Services>
+    </>
   );
 }
 
