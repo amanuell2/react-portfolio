@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
@@ -11,10 +12,9 @@ html{
     }
     
 }
-
 body{
     background: #1b1b1b;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 button{
@@ -26,7 +26,7 @@ button{
     background: transparent;
     color: white;
     transition: all 0.5s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     &:hover{
         background-color: #23d997;
         color: white;
@@ -58,4 +58,5 @@ button{
         line-height: 150%;
     }
 `;
+
 export default GlobalStyle;
