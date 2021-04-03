@@ -1,7 +1,9 @@
 import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+
 import AboutUs from './pages/AboutUs';
-import Services from './pages/Services';
-import FaqSection from './component/FaqSection';
+import OurWok from './pages/OurWork';
+import ConatctUs from './pages/ContactUs';
 import Nav from "./component/Nav";
 import GlobalStyle from './component/GlobalStyle'
 function App() {
@@ -9,9 +11,20 @@ function App() {
     <>
       <GlobalStyle />
       <Nav />
-      <AboutUs />
-      <Services />
-      <FaqSection />
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+
+        <Route path="/work">
+          <OurWok />
+        </Route>
+
+        <Route path="/contact">
+          <ConatctUs />
+        </Route>
+      </Switch>
+
     </>
   );
 }

@@ -1,9 +1,14 @@
 import React from 'react';
 import AboutSection from '../component/AboutSection';
-
+import ServicesSection from '../component/ServicesSection';
+import FaqSection from '../component/FaqSection';
 const AboutUs = () => {
     return (
-        <AboutSection />
+        <>
+            <AboutSection />
+            <ServicesSection />
+            <FaqSection />
+        </>
     );
 }
 
